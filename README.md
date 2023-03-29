@@ -25,9 +25,9 @@ The Chromium module interacts with the Chromium browser to convert HTML document
 Basic example:
 
     curl \
-    --request POST '[CI_CD_DOMAIN]/forms/chromium/convert/url' \
+    --request POST 'https://[CI_CD_DOMAIN]/forms/chromium/convert/url' \
     --header 'Gotenberg-Output-Filename: result' \
-    --form 'url="https://your-url.com"' \
+    --form 'url="https://www.wikipedia.org/"' \
     -u root:[ADMIN_PASSWORD] \
     -O -J
 
@@ -40,7 +40,7 @@ The LibreOffice module interacts with LibreOffice to convert documents to PDF.
 Basic example:
 
     curl \
-    --request POST '[CI_CD_DOMAIN]/forms/libreoffice/convert' \
+    --request POST 'https://[CI_CD_DOMAIN]/forms/libreoffice/convert' \
     --form 'files=@"/path/to/file.docx"' \
     -u root:[ADMIN_PASSWORD] \
     -o my.pdf
@@ -54,7 +54,7 @@ The PDF Engines module gathers all engines that can manipulate PDF files.
 Basic example:
 
     curl \
-    --request POST '[CI_CD_DOMAIN]/forms/pdfengines/merge' \
+    --request POST 'https://[CI_CD_DOMAIN]/forms/pdfengines/merge' \
     --form 'files=@"/path/to/pdf1.pdf"' \
     --form 'files=@"/path/to/pdf2.pdf"' \
     --form 'files=@"/path/to/pdf3.pdf"' \
