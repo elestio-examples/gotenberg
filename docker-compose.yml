@@ -3,3 +3,5 @@ version: "3"
 services:
   gotenberg:
     image: gotenberg/gotenberg:7
+    ports:
+      - 172.17.0.1:3108:3000
