@@ -4,7 +4,7 @@
 
 Deploy Gotenberg server with CI/CD on Elestio
 
-<img src="gotenberg.png" style='width: 100%;'/>
+<img src="gotenberg.png" style='width: 200px;'/>
 <br/>
 <br/>
 
