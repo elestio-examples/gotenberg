@@ -56,6 +56,9 @@ Basic example:
     curl \
     --request POST '[CI_CD_DOMAIN]/forms/pdfengines/merge' \
     --form 'files=@"/path/to/pdf1.pdf"' \
+    --form 'files=@"/path/to/pdf2.pdf"' \
+    --form 'files=@"/path/to/pdf3.pdf"' \
+    --form 'files=@"/path/to/pdf4.pdf"' \
     -u root:[ADMIN_PASSWORD] \
     -o my.pdf
 
