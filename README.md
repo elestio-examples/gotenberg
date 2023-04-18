@@ -10,7 +10,7 @@ Deploy Gotenberg server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can can open Gotenberg API here:
+You can open Gotenberg API here:
 
     URL: https://[CI_CD_DOMAIN]
     email: root
