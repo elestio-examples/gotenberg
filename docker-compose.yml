@@ -2,7 +2,7 @@ version: "3"
 
 services:
   gotenberg:
-    image: gotenberg/gotenberg:7
+    image: gotenberg/gotenberg:${SOFTWARE_VERSION_TAG}
     restart: always
     ports:
       - 172.17.0.1:3108:3000
