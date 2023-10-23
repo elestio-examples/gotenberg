@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  gotenberg:
+    image: elestio4test/gotenberg:${SOFTWARE_VERSION_TAG}
+    env_file:
+      - ./.env
+    restart: always
+    ports:
+      - 172.17.0.1:3108:3000
